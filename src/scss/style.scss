@@ -1,0 +1,40 @@
+// * Global SCSS imports
+@import "fonts";
+@import "_vars";
+@import "_reset";
+@import "_global";
+
+// * Sections SCSS files imports
+@import "_header";
+// @import"_footer";
+
+// * Libs
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+// * Main SCSS Content
+
+// body {
+//   background: url("@img/cover.jpeg") 0 0 no-repeat;
+// }
+
+// ul {
+//   background: url("@img/Pug2.jpeg") 0 0 no-repeat;
+// }
+
+// li {
+//     color: red;
+//   }
+
+// @media (max-width: 768px){
+//   li {
+//     color: wheat;
+//   }
+// }
+
+// @media (max-width: 768px){
+//   body {
+//     //background-color: gold;
+//   }
+// }
+

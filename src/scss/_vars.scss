@@ -1,0 +1,24 @@
+// * Container & breakpoints
+@use "sass:math"; // подключение модуля math
+$containerWidth: 1100; // ширина контейнера контента
+$containerPadding: 40; // паддинги по бокам от контейнера
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1400: 1399.98+px;
+$breakpoint992: 991.98+px;
+$breakpoint768: 767.98+px;
+$breakpoint480: 479.98+px;
+
+// * Header & Burger menu options
+$burgerBreakpoint: $breakpoint992;
+$burgerColor: #4DC3D3;
+$burgerColor_active: #74C9D5;
+$burgerButtonColor: #fff;
+$burgerButtonColor_active: #202020;
+$headerPosition: relative; // fixed or relative
+
+// * Fonts
+$fontMain: sans-serif;
+$fontSecondary: '';
+
+// * Colors
+
