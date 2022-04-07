@@ -855,8 +855,8 @@ nav {
   gap: 20px;
 }
 
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  .info__button-section:not(:last-child) {
+@supports not (gap: 20px) {
+  .info__button-section {
     margin: 0 20px 20px 0;
   }
 }
@@ -1166,8 +1166,8 @@ nav {
   gap: 13px;
 }
 
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  .card__social-bar:not(:last-child) {
+@supports not (gap: 13px) {
+  .card__social-bar {
     margin: 0 13px 13px 0;
   }
 }
@@ -1713,8 +1713,8 @@ nav {
     gap: 10px;
   }
 
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-    .info__button-section:not(:last-child) {
+@supports not (gap: 10px) {
+    .info__button-section {
       margin: 0 10px 10px 0;
     }
 }
@@ -1768,8 +1768,8 @@ nav {
     gap: 20px;
   }
 
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-    .backing__personalities:not(:last-child) {
+@supports not (gap: 20px) {
+    .backing__personalities {
       margin: 0 20px 20px 0;
     }
 }
