@@ -1,4 +1,4 @@
-# React SPA "Mesto"
+# Adaptive landing page PaymentOS for DAOs
 Adaptive landing page was built with gulp and SCSS.
 * Miminified CSS, HTML, JS
 * WebP optimized images
@@ -6,6 +6,7 @@ Adaptive landing page was built with gulp and SCSS.
 * Adaptive font-sizes
 [Ready project is here](https://proehavshiy.github.io/landing_paymentOS/)
 <br/>
+
 ## You can run this project locally:
 * clone branch with `git@github.com:proehavshiy/landing_paymentOS.git`
 * `npm run dev` - run the project

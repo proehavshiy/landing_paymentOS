@@ -12,7 +12,7 @@
     "zip": "gulp deployZip --build",
     "ftp": "gulp deployFtp --build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
