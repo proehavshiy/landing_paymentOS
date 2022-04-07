@@ -749,7 +749,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  row-gap: 50px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
 }
 
 .menu__item:last-child {
@@ -772,7 +775,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8px;
+  row-gap: 8px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -840,7 +846,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  row-gap: 20px;
 }
 
 .info__app {
@@ -848,7 +854,9 @@ nav {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 10px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .info__app:hover svg {
@@ -888,7 +896,10 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 80px;
+  row-gap: 80px;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
 }
 
 .benefits_margin {
@@ -918,7 +929,10 @@ nav {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, 346px);
-  gap: 50px 20px;
+  row-gap: 50px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1025,7 +1039,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 35px 69px;
+  row-gap: 35px;
+  -webkit-column-gap: 69px;
+     -moz-column-gap: 69px;
+          column-gap: 69px;
 }
 
 .partners__item {
@@ -1061,7 +1078,10 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  gap: 30px 20px;
+  row-gap: 30px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .backing__personality {
@@ -1115,7 +1135,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 13px;
+  row-gap: 13px;
+  -webkit-column-gap: 13px;
+     -moz-column-gap: 13px;
+          column-gap: 13px;
 }
 
 .card__social-link {
@@ -1184,7 +1207,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 
 .footer__social-item {
@@ -1355,7 +1381,10 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 40px;
+    row-gap: 40px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
   }
 
   .footer__item {
@@ -1407,7 +1436,10 @@ nav {
   }
 
   .benefits {
-    gap: 40px;
+    row-gap: 40px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
   }
 
   .benefits_margin {
@@ -1415,7 +1447,10 @@ nav {
   }
 
   .benefits__item {
-    gap: 20px;
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
   }
 
   .benefits__heaidng {
@@ -1435,7 +1470,10 @@ nav {
   }
 
   .partners {
-    gap: 30px;
+    row-gap: 30px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
   }
 
   .footer__wrapper {
@@ -1626,7 +1664,7 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 10px;
+    row-gap: 10px;
   }
 
   .info__app {
@@ -1642,12 +1680,18 @@ nav {
   }
 
   .benefits {
-    gap: 20px;
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
   }
 
   .special__steps {
     grid-template-columns: repeat(auto-fit, 100%);
-    gap: 20px;
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
   }
 
   .trusted {
@@ -1663,7 +1707,7 @@ nav {
   }
 
   .backing__personalities {
-    gap: 20px;
+    row-gap: 20px;
   }
 
   .footer__wrapper {
@@ -1680,6 +1724,9 @@ nav {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 20px;
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
   }
 }
