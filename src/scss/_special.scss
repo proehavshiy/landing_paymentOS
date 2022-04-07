@@ -10,7 +10,9 @@
   &__steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, 346px);
-    gap: 50px 20px;
+    // gap: 50px 20px;
+    row-gap: 50px;
+    column-gap: 20px;
     justify-content: center;
 
     @media (max-width: $breakpoint768) {
@@ -20,7 +22,9 @@
 
     @media (max-width: $breakpoint480) {
       grid-template-columns: repeat(auto-fit, 100%);
-      gap: 20px;
+      // gap: 20px;
+      row-gap: 20px;
+      column-gap: 20px;
     }
   }
 

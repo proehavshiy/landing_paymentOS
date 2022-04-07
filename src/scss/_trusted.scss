@@ -39,10 +39,14 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 35px 69px;
+  // gap: 35px 69px;
+  row-gap: 35px;
+  column-gap: 69px;
 
   @media (max-width: $breakpoint768) {
-    gap: 30px;
+    // gap: 30px;
+    row-gap: 30px;
+    column-gap: 30px;
   }
 
   // __link

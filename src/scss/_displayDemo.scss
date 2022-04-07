@@ -105,7 +105,8 @@
   &__button-section {
     margin: 62px 0 0 0;
     display: flex;
-    gap: 20px;
+    // gap: 20px;
+    row-gap: 20px;
 
     @media (max-width: $breakpoint768) {
       margin: 50px 0 0 0;
@@ -116,7 +117,8 @@
       margin: 40px 0 0 0;
       flex-direction: column;
       justify-content: center;
-      gap: 10px;
+      // gap: 10px;
+      row-gap: 10px;
 
     }
   }
@@ -126,7 +128,8 @@
   &__app {
     padding: 13px 26px;
     display: inline-flex;
-    gap: 10px;
+    // gap: 10px;
+    column-gap: 10px;
 
     @media (max-width: $breakpoint480) {
       padding: 13px 20px;
@@ -190,14 +193,20 @@
 .benefits {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
+  // gap: 80px;
+  row-gap: 80px;
+  column-gap: 80px;
 
   @media (max-width: $breakpoint768) {
-    gap: 40px;
+    // gap: 40px;
+    row-gap: 40px;
+    column-gap: 40px;
   }
 
   @media (max-width: $breakpoint480) {
-    gap: 20px;
+    // gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
   }
 
   &_margin {
@@ -213,7 +222,9 @@
   &__item {
 
     @media (max-width: $breakpoint768) {
-      gap: 20px;
+      // gap: 20px;
+      row-gap: 20px;
+      column-gap: 20px;
 
     }
   }

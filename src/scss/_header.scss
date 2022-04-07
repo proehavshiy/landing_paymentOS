@@ -33,7 +33,9 @@ nav {
 .menu {
   display: flex;
   align-items: center;
-  gap: 50px;
+  // gap: 50px;
+  row-gap: 50px;
+  column-gap: 50px;
 
   // .menu__item
   &__item {
@@ -57,7 +59,9 @@ nav {
     line-height: 1;
     display: flex;
     align-items: center;
-    gap: 8px;
+    // gap: 8px;
+    row-gap: 8px;
+    column-gap: 8px;
     transition: $linkTransition;
 
     &:hover {

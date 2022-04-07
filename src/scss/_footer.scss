@@ -15,7 +15,9 @@
     @media (max-width: $breakpoint992) {
       flex-direction: column-reverse;
       align-items: center;
-      gap: 40px;
+      // gap: 40px;
+      row-gap: 40px;
+      column-gap: 40px;
     }
 
     @media (max-width: $breakpoint768) {
@@ -114,13 +116,16 @@
   &__social-bar {
     margin: 34px 0 0 0;
     display: flex;
-    // justify-content: space-between;
-    gap: 30px;
+    // gap: 30px;
+    row-gap: 30px;
+    column-gap: 30px;
 
     @media (max-width: $breakpoint480) {
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      // gap: 20px;
+      row-gap: 20px;
+      column-gap: 20px;
     }
 
   }

@@ -28,10 +28,11 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-    gap: 30px 20px;
+    row-gap: 30px;
+    column-gap: 20px;
 
     @media (max-width: $breakpoint480) {
-      gap: 20px;
+      row-gap: 20px;
     }
   }
 
@@ -97,7 +98,9 @@
     margin: 7px 0 0 0;
     display: flex;
     align-items: center;
-    gap: 13px;
+    // gap: 13px;
+    row-gap: 13px;
+    column-gap: 13px;
   }
 
   // .card__social
