@@ -1106,8 +1106,8 @@ nav {
   gap: 30px 20px;
 }
 
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  .backing__personalities:not(:last-child) {
+@supports not (gap: 30px 20px) {
+  .backing__personalities {
     margin: 0 30px 20px 0;
   }
 }
