@@ -856,7 +856,7 @@ nav {
 }
 
 @supports not (gap: 20px) {
-  .info__button-section {
+  .info__button-section > * {
     margin: 0 20px 20px 0;
   }
 }
@@ -869,8 +869,8 @@ nav {
   gap: 10px;
 }
 
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  .info__app:not(:last-child) {
+@supports not (gap: 10px) {
+  .info__app > * {
     margin: 0 10px 10px 0;
   }
 }
@@ -915,8 +915,8 @@ nav {
   gap: 80px;
 }
 
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  .benefits:not(:last-child) {
+@supports not (gap: 80px) {
+  .benefits > * {
     margin: 0 80px 80px 0;
   }
 }
@@ -1107,7 +1107,7 @@ nav {
 }
 
 @supports not (gap: 30px 20px) {
-  .backing__personalities {
+  .backing__personalities > * {
     margin: 0 30px 20px 0;
   }
 }
@@ -1166,8 +1166,8 @@ nav {
   gap: 13px;
 }
 
-@supports not (gap: 13px) {
-  .card__social-bar {
+@supports not (gap: 20px) {
+  .card__social-bar > * {
     margin: 0 13px 13px 0;
   }
 }
@@ -1714,7 +1714,7 @@ nav {
   }
 
 @supports not (gap: 10px) {
-    .info__button-section {
+    .info__button-section > * {
       margin: 0 10px 10px 0;
     }
 }
@@ -1769,7 +1769,7 @@ nav {
   }
 
 @supports not (gap: 20px) {
-    .backing__personalities {
+    .backing__personalities > * {
       margin: 0 20px 20px 0;
     }
 }
