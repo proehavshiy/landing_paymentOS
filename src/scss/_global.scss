@@ -7,16 +7,17 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 $containerSidePadding+px;
+  position: relative;
 
-  @media (max-width: $breakpoint1400) {
-    max-width: 1100px;
-  }
+
   @media (max-width: $breakpoint992) {
     max-width: 970px;
   }
+
   @media (max-width: $breakpoint768) {
     max-width: 750px;
   }
+
   @media (max-width: $breakpoint480) {
     max-width: none;
   }
@@ -25,8 +26,11 @@
 // * Body
 
 body {
+  font-family: $fontMain;
+  font-weight: 300;
 
-  &.locked { // стиль для боди при открытом бургер менб, чтобы не прокручивался конент под меню
+  &.locked {
+    // стиль для боди при открытом бургер менб, чтобы не прокручивался конент под меню
     overflow: hidden;
   }
 }
@@ -34,7 +38,9 @@ body {
 // * Animations
 // * Fade
 
-@keyframes fade { // для анимации табов
+@keyframes fade {
+
+  // для анимации табов
   0% {
     opacity: 0;
   }
@@ -44,3 +50,17 @@ body {
   }
 }
 
+
+@keyframes cycledMove {
+  from {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(3px, -1.5px);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}

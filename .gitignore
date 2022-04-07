@@ -1,5 +1,5 @@
 # dependencies
-/node_modules
+node_modules/
 
 # production
 /dist
@@ -13,7 +13,3 @@
 
 # files
 /gulp/version.json
-/src/fonts/*
-/src/files/*
-/src/img/*
-/src/svgicons/*

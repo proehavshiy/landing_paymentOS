@@ -1,12 +1,10 @@
 // * Global SCSS imports
+@import "normalize";
+@import "_reset";
 @import "fonts";
 @import "_vars";
-@import "_reset";
 @import "_global";
 
-// * Sections SCSS files imports
-@import "_header";
-// @import"_footer";
 
 // * Libs
 //@import "../../node_modules/bootstrap/scss/bootstrap";
@@ -14,27 +12,48 @@
 
 // * Main SCSS Content
 
-// body {
-//   background: url("@img/cover.jpeg") 0 0 no-repeat;
-// }
+// * global общие
+.button {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background: $colorMain;
+  color: $colorBg;
+  fill: $colorBg;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: $linkTransition;
 
-// ul {
-//   background: url("@img/Pug2.jpeg") 0 0 no-repeat;
-// }
+  &:hover {
+    background-color: $colorMainDark;
+  }
+}
 
-// li {
-//     color: red;
-//   }
+.heading {
+  font-style: normal;
+  font-weight: 700;
+  color: $colorFontMain;
+}
 
-// @media (max-width: 768px){
-//   li {
-//     color: wheat;
-//   }
-// }
+.text {
+  font-style: normal;
+  font-weight: 300;
+  @include adaptive-font(14, 12);
+  line-height: 1.71;
+  color: $colorSubheading;
+}
 
-// @media (max-width: 768px){
-//   body {
-//     //background-color: gold;
-//   }
-// }
+//*
 
+// * Sections SCSS files imports
+@import "_header";
+@import "displayDemo";
+@import "special";
+@import "trusted";
+@import "backing";
+@import"_footer";

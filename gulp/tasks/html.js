@@ -52,7 +52,7 @@ export const html = () => {
     //   }
     // }))
 
-    // .pipe(htmlmin({ 
+    // .pipe(htmlmin({
     //   collapseWhitespace: true,
     //   removeComments: true,
     // }))

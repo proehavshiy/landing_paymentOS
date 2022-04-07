@@ -1,5 +1,6 @@
 {
   "name": "gulp-html",
+  "homepage": "http://proehavshiy.github.io/landing_paymentOS",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -9,7 +10,9 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZip --build",
-    "deploy": "gulp deployFtp --build"
+    "ftp": "gulp deployFtp --build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "browser-sync": "latest",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",

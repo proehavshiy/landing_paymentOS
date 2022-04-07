@@ -1,0 +1,112 @@
+.special {
+  margin-top: 110px;
+
+  @media (max-width: $breakpoint992) {
+    margin-top: 55px;
+  }
+
+  // .special__steps
+
+  &__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 346px);
+    gap: 50px 20px;
+    justify-content: center;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(auto-fit, 80%);
+
+    }
+
+    @media (max-width: $breakpoint480) {
+      grid-template-columns: repeat(auto-fit, 100%);
+      gap: 20px;
+    }
+  }
+
+
+  // .special__step-card
+
+  &__step-card {
+    display: flex;
+    flex-direction: column;
+
+    // .special__step-card_main
+
+    &_main {
+      justify-content: center;
+      padding: 0 20% 0 0;
+    }
+
+    // .special__step-card_content
+
+    &_content {
+      padding: 60px 40px 93px;
+      border: 1px solid #EFEFF4;
+      box-sizing: border-box;
+      border-radius: 8px;
+      transition: $linkTransition;
+
+      @media (max-width: $breakpoint768) {
+        padding: 40px;
+      }
+
+      &:hover {
+        background: $colorCardHover;
+
+        & .special__icon-wrapper {
+          background: $colorBg;
+          box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+        }
+      }
+    }
+  }
+
+  // .special__steps-heading
+
+  &__steps-heading {
+    font-size: 36px;
+    @include adaptive-font(36, 28);
+    line-height: 1.22;
+  }
+
+
+  // .special__step-text
+
+  &__step-text {
+    margin: 16px 0 0 0;
+  }
+
+  // .special__icon-wrapper
+
+  &__icon-wrapper {
+    width: 77px;
+    height: 77px;
+    background: $colorCardHover;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $linkTransition;
+  }
+
+  // .special__icon
+
+  &__icon {}
+
+  // .special__step-heading
+
+  &__step-heading {
+    margin-top: 40px;
+    font-weight: 800;
+    // font-size: 18px;
+    @include adaptive-font(18, 24);
+    line-height: 1;
+    color: $colorFontMain;
+
+    @media (max-width: $breakpoint768) {
+      margin-top: 20px;
+      // font-size: 24px;
+    }
+  }
+}
