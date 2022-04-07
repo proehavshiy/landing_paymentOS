@@ -749,10 +749,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 50px;
-  -webkit-column-gap: 50px;
-     -moz-column-gap: 50px;
-          column-gap: 50px;
+  gap: 50px;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .menu:not(:last-child) {
+    margin: 0 50px 50px 0;
+  }
 }
 
 .menu__item:last-child {
@@ -775,12 +778,15 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 8px;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
+  gap: 8px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .menu__item-link:not(:last-child) {
+    margin: 0 8px 8px 0;
+  }
 }
 
 .menu__item-link:hover {
@@ -846,7 +852,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  row-gap: 20px;
+  gap: 20px;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .info__button-section:not(:last-child) {
+    margin: 0 20px 20px 0;
+  }
 }
 
 .info__app {
@@ -854,9 +866,13 @@ nav {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  gap: 10px;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .info__app:not(:last-child) {
+    margin: 0 10px 10px 0;
+  }
 }
 
 .info__app:hover svg {
@@ -896,10 +912,13 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 80px;
-  -webkit-column-gap: 80px;
-     -moz-column-gap: 80px;
-          column-gap: 80px;
+  gap: 80px;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .benefits:not(:last-child) {
+    margin: 0 80px 80px 0;
+  }
 }
 
 .benefits_margin {
@@ -929,13 +948,16 @@ nav {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, 346px);
-  row-gap: 50px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  gap: 50px 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .special__steps:not(:last-child) {
+    margin: 0 50px 20px 0;
+  }
 }
 
 .special__step-card {
@@ -1039,10 +1061,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 35px;
-  -webkit-column-gap: 69px;
-     -moz-column-gap: 69px;
-          column-gap: 69px;
+  gap: 35px 69px;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .partners:not(:last-child) {
+    margin: 0 35px 69px 0;
+  }
 }
 
 .partners__item {
@@ -1078,10 +1103,13 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  row-gap: 30px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  gap: 30px 20px;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .backing__personalities:not(:last-child) {
+    margin: 0 30px 20px 0;
+  }
 }
 
 .backing__personality {
@@ -1135,10 +1163,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 13px;
-  -webkit-column-gap: 13px;
-     -moz-column-gap: 13px;
-          column-gap: 13px;
+  gap: 13px;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .card__social-bar:not(:last-child) {
+    margin: 0 13px 13px 0;
+  }
 }
 
 .card__social-link {
@@ -1207,10 +1238,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  row-gap: 30px;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  gap: 30px;
+}
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .footer__social-bar:not(:last-child) {
+    margin: 0 30px 30px 0;
+  }
 }
 
 .footer__social-item {
@@ -1381,11 +1415,14 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    row-gap: 40px;
-    -webkit-column-gap: 40px;
-       -moz-column-gap: 40px;
-            column-gap: 40px;
+    gap: 40px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .footer__wrapper:not(:last-child) {
+      margin: 0 40px 40px 0;
+    }
+}
 
   .footer__item {
     max-width: none;
@@ -1436,22 +1473,28 @@ nav {
   }
 
   .benefits {
-    row-gap: 40px;
-    -webkit-column-gap: 40px;
-       -moz-column-gap: 40px;
-            column-gap: 40px;
+    gap: 40px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .benefits:not(:last-child) {
+      margin: 0 40px 40px 0;
+    }
+}
 
   .benefits_margin {
     margin: 20px 0 0 0;
   }
 
   .benefits__item {
-    row-gap: 20px;
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
+    gap: 20px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .benefits__item:not(:last-child) {
+      margin: 0 20px 20px 0;
+    }
+}
 
   .benefits__heaidng {
     text-align: start;
@@ -1470,11 +1513,14 @@ nav {
   }
 
   .partners {
-    row-gap: 30px;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
+    gap: 30px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .partners:not(:last-child) {
+      margin: 0 30px 30px 0;
+    }
+}
 
   .footer__wrapper {
     max-width: 100%;
@@ -1664,8 +1710,14 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    row-gap: 10px;
+    gap: 10px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .info__button-section:not(:last-child) {
+      margin: 0 10px 10px 0;
+    }
+}
 
   .info__app {
     padding: 13px 20px;
@@ -1680,19 +1732,25 @@ nav {
   }
 
   .benefits {
-    row-gap: 20px;
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
+    gap: 20px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .benefits:not(:last-child) {
+      margin: 0 20px 20px 0;
+    }
+}
 
   .special__steps {
     grid-template-columns: repeat(auto-fit, 100%);
-    row-gap: 20px;
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
+    gap: 20px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .special__steps:not(:last-child) {
+      margin: 0 20px 20px 0;
+    }
+}
 
   .trusted {
     padding: 30px 0;
@@ -1707,8 +1765,14 @@ nav {
   }
 
   .backing__personalities {
-    row-gap: 20px;
+    gap: 20px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .backing__personalities:not(:last-child) {
+      margin: 0 20px 20px 0;
+    }
+}
 
   .footer__wrapper {
     padding: 57px 0 49px 0;
@@ -1724,9 +1788,12 @@ nav {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    row-gap: 20px;
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
+    gap: 20px;
   }
+
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .footer__social-bar:not(:last-child) {
+      margin: 0 20px 20px 0;
+    }
+}
 }
