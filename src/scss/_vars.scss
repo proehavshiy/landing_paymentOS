@@ -28,6 +28,18 @@ $breakpoint480: 479.98+px;
   }
 }
 
+// хакдля поддержки gap на flex тк IOS до 14.1 не работает
+// @include flex-gap(40px, 50px);
+@mixin flex-gap($rowGap, $columnGap) {
+  $row: -$rowGap/2;
+  $col: -$columnGap/2;
+  margin: $row $col;
+
+  &>* {
+    margin: $rowGap/2 $columnGap/2;
+  }
+}
+
 
 // * Fonts
 $fontMain: 'Metropolis',

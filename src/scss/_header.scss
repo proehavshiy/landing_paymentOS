@@ -31,11 +31,11 @@ nav {
 }
 
 .menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(min-content, max-content));
   align-items: center;
-  // gap: 50px;
-  row-gap: 50px;
-  column-gap: 50px;
+  gap: 50px;
+
 
   // .menu__item
   &__item {
@@ -57,12 +57,14 @@ nav {
     font-weight: 600;
     font-size: 14px;
     line-height: 1;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
     align-items: center;
-    // gap: 8px;
-    row-gap: 8px;
-    column-gap: 8px;
     transition: $linkTransition;
+
+    &>svg {
+      margin-right: 8px;
+    }
 
     &:hover {
       color: $colorSubheading;
@@ -98,22 +100,22 @@ nav {
     top: 0;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: min-content;
+    grid-template-rows: repeat(auto-fit, minmax(50px, max-content));
+    justify-items: center;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); // раскрытое меню по бургеру - начальное положение
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: all 0.5s ease 0s;
     pointer-events: none;
 
     &.active {
-      display: flex;
+
       left: 0;
       top: 0;
       height: 100vh;
       width: 100vw;
-      flex-direction: column;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); // раскрытое меню по бургеру
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
