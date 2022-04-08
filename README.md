@@ -4,7 +4,9 @@ Adaptive landing page was built with gulp and SCSS.
 * WebP optimized images
 * Adaptive layouts
 * Adaptive font-sizes
+
 [Figma](https://www.figma.com/file/XE7X7V54oYIbCoX5KyNrwV/YouTube-1?node-id=0%3A1)
+
 [Ready project is here](https://proehavshiy.github.io/landing_paymentOS/)
 <br/>
 
