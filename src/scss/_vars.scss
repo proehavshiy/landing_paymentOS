@@ -29,14 +29,25 @@ $breakpoint480: 479.98+px;
 }
 
 // хакдля поддержки gap на flex тк IOS до 14.1 не работает
-// @include flex-gap(40px, 50px);
-@mixin flex-gap($rowGap, $columnGap) {
-  $row: -$rowGap/2;
-  $col: -$columnGap/2;
-  margin: $row $col;
+// @include gap-flex-safari(40px, 50px, 20px);
 
-  &>* {
-    margin: $rowGap/2 $columnGap/2;
+@mixin gap-flex-safari($rowGap, $columnGap, $marginTop) {
+
+  // для сафари
+  // https: //stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome
+  @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+      $row: -$rowGap/2;
+      $col: -$columnGap/2;
+      margin: $row $col;
+
+      &>* {
+        margin: $rowGap/2 $columnGap/2;
+      }
+
+      // если нужен margin-top, то его нужно ставить сюда
+      margin-top: $marginTop;
+    }
   }
 }
 
