@@ -1452,7 +1452,6 @@ nav {
 @media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
 @supports (-webkit-appearance: none) {
       .partners {
-        margin: -15px -15px;
         margin-top: 35px;
       }
 
@@ -1518,6 +1517,7 @@ nav {
             justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
+    gap: 10px;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     -webkit-transition: all 0.5s ease 0s;
@@ -1692,7 +1692,6 @@ nav {
 @media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
 @supports (-webkit-appearance: none) {
     .partners {
-      margin: -17.5px -34.5px;
       margin-top: 48px;
     }
 
