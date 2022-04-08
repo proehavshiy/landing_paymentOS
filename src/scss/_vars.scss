@@ -37,9 +37,9 @@ $breakpoint480: 479.98+px;
   // https: //stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome
   @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {
-      $row: -$rowGap/2;
-      $col: -$columnGap/2;
-      margin: $row $col;
+      // $row: -$rowGap/2;
+      // $col: -$columnGap/2;
+      // margin: $row $col;
 
       &>* {
         margin: $rowGap/2 $columnGap/2;
